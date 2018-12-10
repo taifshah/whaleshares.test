@@ -6,8 +6,8 @@ class Adapter {
     constructor() {
         wls.name = `wlsjs`;
 
-        this.connection = require(`@steemit/steem-js`);
-        this.reconnect();
+        wls.connection = require(`@whaleshares/wls-js`);
+        wls.reconnect();
     }
 
     static instance() {
