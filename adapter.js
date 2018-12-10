@@ -20,8 +20,8 @@ class Adapter {
 
     reconnect() {
         this.connection.api.setOptions({ url: 'wss://whaleshares.io/ws' });
-        this.connection.config.set(`address_prefix`, `WKA`);
-        this.connection.config.set(`chain_id`, `de999ada2ff7ed3d3d580381f229b40b5a0261aec48eb830e540080817b72866`);
+        this.connection.config.set('address_prefix', 'WLS');
+        this.connection.config.set('chain_id', 'de999ada2ff7ed3d3d580381f229b40b5a0261aec48eb830e540080817b72866');
     }
 
     async processAccountInfo(username, callback) {
